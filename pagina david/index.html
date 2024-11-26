@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporación Cultural Buin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="img/logoBuin.png" alt="Logo CAB">
+            </div>
+            <div class="nav-links">
+                <a href="#" id="cab-link">CAB</a>
+                <a href="#contacto" id="contact-link">CONTACTO</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-logo">
+        <img src="img/logoBuin.png" alt="Buin Corporación Cultural">
+    </section>
+
+    <section class="quienes-somos" id="quienes-somos">
+        <h2>QUIENES SOMOS</h2>
+        <div class="mission-text">
+            <p>EN LA <span>CORPORACIÓN ARTÍSTICA Y CULTURAL DE BUIN (CAB)</span> CREEMOS QUE LA CULTURA TRANSFORMA COMUNIDADES. PROMOVEMOS EL ARTE, LA EDUCACIÓN Y EL INTERCAMBIO CULTURAL A TRAVÉS DE TALLERES, CLASES Y EVENTOS QUE INSPIRAN CREATIVIDAD Y FORTALECEN NUESTRAS RAÍCES. NUESTRA VISIÓN ES CLARA: MOVER LA CULTURA Y GENERAR UN IMPACTO POSITIVO MEDIANTE EL ARTE Y LA EDUCACIÓN.</p>
+        </div>
+
+        <div class="services-container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon education">
+                        <img src="img/educlogo.png" alt="Educación">
+                    </div>
+                    <h3>EDUCACIÓN</h3>
+                    <p>Talleres y actividades diseñados para inspirar el aprendizaje y la creatividad en nuestra comunidad, en todas sus edades.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon community">
+                        <img src="img/comLog.png" alt="Comunidad">
+                    </div>
+                    <h3>COMUNIDAD</h3>
+                    <p>Proyectos y espacios que conectan a las personas para fortalecer lazos culturales y sociales.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon culture">
+                        <img src="img/culLogo.png" alt="Cultura">
+                    </div>
+                    <h3>CULTURA</h3>
+                    <p>Un homenaje a nuestras raíces, celebrando el arte y las tradiciones que nos definen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="proyectos">
+        <h2>PROYECTOS</h2>
+        <p>¡UNOS DE NUESTROS PROYECTOS DESTACADOS!</p>
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="img/nocheModaro.png" alt="Festival de Food Truck">
+                <h3>PRIMER FESTIVAL DE FOOD TRUCK</h3>
+                <p>El Primer Festival de Food Trucks reunió a la comunidad en una noche llena de sabor, música y cultura. Una experiencia única.</p>
+            </div>
+            
+            <div class="project-card">
+                <img src="img/cantante morado.png" alt="Que Valga la Peña">
+                <h3>QUE VALGA LA PEÑA!</h3>
+                <p>Disfruta de música en vivo y tradición en nuestra peña, un espacio que celebra el arte y las raíces culturales de Buin.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="artists" id="artistas">
+        <h2>ARTISTAS CON LOS QUE HEMOS TRABAJADO</h2>
+        
+        <div class="pagination">
+            <button class="page-btn active" data-page="1">1</button>
+            <button class="page-btn" data-page="2">2</button>
+            <button class="page-btn" data-page="3">3</button>
+        </div>
+
+        <div class="artist-content">
+            <!-- Página 1 -->
+            <div class="artist-page active" data-page="1">
+                <div class="artist-card">
+                    <img src="img/cancionHermana.png" alt="Canciones Hermanas">
+                    <h3>Canciones Hermanas: Una noche de música y emociones</h3>
+                    <p>Ven a disfrutar de una velada inolvidable con los talentosos Manuel Huerta, Jota Figueroa y Juan Murua. Una experiencia única que conecta música y alma en el corazón de Buin.</p>
+                </div>
+            </div>
+
+            <!-- Página 2 -->
+            <div class="artist-page" data-page="2">
+                <div class="artist-card">
+                    <img src="img/jaivas.png" alt="Vertiente Cósmica">
+                    <h3>Vertiente Cósmica rinde homenaje a Los Jaivas</h3>
+                    <p>Una noche especial para celebrar la obra musical de Los Jaivas, interpretada por Vertiente Cósmica. Te esperamos este jueves 24 de octubre a las 20:30 hrs en el Centro Cultural de Buin. ¡Entrada liberada!</p>
+                </div>
+            </div>
+
+            <!-- Página 3 -->
+            <div class="artist-page" data-page="3">
+                <div class="artist-card">
+                    <img src="img/rugan.png" alt="Rugan">
+                    <h3>Rugan: Alfa & Omega, el renacer de un artista chileno</h3>
+                    <p>@rugan_ es un experimentado músico chileno que aparece en escena con la publicación de "Alfa & Omega", canción que se transforma en su debut en solitario después de 30 años de destacado trabajo en diversas agrupaciones de rock.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contacto">
+        <h2>CONTACTANOS</h2>
+        <p>¿Eres artista o gestor cultural? ¡Trabaja con nosotros! Únete a nuestra misión de impulsar la cultura en Buin a través de proyectos artísticos, talleres y eventos comunitarios. Comparte tu talento y sé parte de nuestra red de creadores.</p>
+        
+        <form id="contact-form">
+            <input type="text" placeholder="Ingresa tu nombre" required>
+            <input type="email" placeholder="Ingresa tu correo electrónico" required>
+            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SOBRE CAB</h3>
+                <p>Corporación Artística y Cultural de Buin (CAB) - Impulsando la creatividad, el arte y la conexión comunitaria. Contáctanos para ser parte del cambio cultural.</p>
+                <div class="contact-info">
+                    <p><strong>Dirección:</strong> Av. Manuel Rodríguez 123, Buin, Región Metropolitana, Chile</p>
+                    <p><strong>Teléfono:</strong> +56 9 8765 4321</p>
+                    <p><strong>Correo:</strong> <a href="mailto:contacto@cab.cl">contacto@cab.cl</a></p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>SOCIAL</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/CORPOCULTURALBUIN/" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/cab_buin/" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
